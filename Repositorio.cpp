@@ -12,19 +12,26 @@ int main() {
 
     switch (opcion) {
     case 1:
-        // Calcular el área de un cuadrado
+        
         float lado;
         printf("Ingrese el lado del cuadrado: ");
         scanf_s("%f", &lado);
-        if (lado <= 0) {
-            printf("El lado debe ser un número positivo.\n");
-        }
-        else {
-            float areaCuadrado = lado * lado;
-            printf("El área del cuadrado es: %.2f\n", areaCuadrado);
-        }
+        float areaCuadrado = lado * lado;
+        printf("El área del cuadrado es: %.2f\n", areaCuadrado);
+        
         break;
 
+    case 2:
+       
+        float base, altura;
+        printf("Ingrese la base del triángulo: ");
+        scanf("%f", &base);
+        printf("Ingrese la altura del triángulo: ");
+        scanf("%f", &altura);
+        float areaTriangulo = (base * altura) / 2;
+         printf("El área del triángulo es: %.2f\n", areaTriangulo);
+      
+        break;
 
     default:
         printf("Opción no válida\n");
