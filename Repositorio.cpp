@@ -25,14 +25,22 @@ int main() {
        
         float base, altura;
         printf("Ingrese la base del triángulo: ");
-        scanf("%f", &base);
+        scanf_s("%f", &base);
         printf("Ingrese la altura del triángulo: ");
-        scanf("%f", &altura);
+        scanf_s("%f", &altura);
         float areaTriangulo = (base * altura) / 2;
          printf("El área del triángulo es: %.2f\n", areaTriangulo);
       
         break;
-
+    case 3:
+        float pi = 3.1416;
+        float radio;
+        printf("Ingrese el radio del círculo: ");
+        scanf_s("%f", &radio);
+         float areaCirculo = pi * radio * radio;
+        
+         printf("El área del círculo es: %.2f\n", areaCirculo);
+        break;
     default:
         printf("Opción no válida\n");
     }
